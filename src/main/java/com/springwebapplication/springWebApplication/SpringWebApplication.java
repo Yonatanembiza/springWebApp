@@ -15,6 +15,7 @@ public class SpringWebApplication {
 	}
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+		// this is just a sample
 		return String.format("Hello %s!", name);
 	}
 
